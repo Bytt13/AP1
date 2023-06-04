@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, anterior, anteanterior, resultado;
+    anterior = 1;
+    anteanterior = 0;
+
+    cin >> n;
+
+    for(int i = 0; i < n + 1; i++)
+    {
+        resultado = anteanterior + anterior;
+        cout << anterior << endl;
+        anteanterior = anterior;
+        anterior = resultado;
+    }
+}
